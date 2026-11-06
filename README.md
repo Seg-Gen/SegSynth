@@ -111,3 +111,131 @@ The following links reproduce the authors’ model inventory. Fold numbers are z
 |---|---|---|
 | U-Net | [0](https://huggingface.co/sugam24/geonusaf-unet-r18-block-fold0) · [1](https://huggingface.co/sugam24/geonusaf-unet-r18-block-fold1) · [2](https://huggingface.co/sugam24/geonusaf-unet-r18-block-fold2) | [0](https://huggingface.co/sugam24/geonusaf-unet-r18-random-fold0) · [1](https://huggingface.co/sugam24/geonusaf-unet-r18-random-fold1) · [2](https://huggingface.co/sugam24/geonusaf-unet-r18-random-fold2) |
 | UNetFormer | [0](https://huggingface.co/Pranilllllll/geonusaf-unetformer-r18-block-fold0) · [1](https://huggingface.co/Pranilllllll/geonusaf-unetformer-r18-block-fold1) · [2](https://huggingface.co/Pranilllllll/geonusaf-unetformer-r18-block-fold2) | [0](https://huggingface.co/Pranilllllll/geonusaf-unetformer-r18-random-fold0) · [1](https://huggingface.co/Pranilllllll/geonusaf-unetformer-r18-random-fold1) · [2](https://huggingface.co/Pranilllllll/geonusaf-unetformer-r18-random-fold2) |
+| SegFormer-B0 | [0](https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-block-fold0) · [1](https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-block-fold1) · [2](https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-block-fold2) | [0](https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-random-fold0) · [1](https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-random-fold1) · [2](https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-random-fold2) |
+| SegNeXt-T | [0](https://huggingface.co/Pranilllllll/geonusaf-segNext-block-fold0) · [1](https://huggingface.co/Pranilllllll/geonusaf-segNext-block-fold1) · [2](https://huggingface.co/Pranilllllll/geonusaf-segNext-block-fold2) | [0](https://huggingface.co/Pranilllllll/geonusaf-segNext-random-fold0) · [1](https://huggingface.co/Pranilllllll/geonusaf-segNext-random-fold1) · [2](https://huggingface.co/Pranilllllll/geonusaf-segNext-random-fold2) |
+| TC-SegFormer | [0](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold0) · [1](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1) · [2](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold2) | [0](https://huggingface.co/sugam24/geonusaf-tcsegformer-random-fold0) · [1](https://huggingface.co/sugam24/geonusaf-tcsegformer-random-fold1) · [2](https://huggingface.co/sugam24/geonusaf-tcsegformer-random-fold2) |
+
+**Legacy controls** — [SegFormer-B0](https://huggingface.co/Pranilllllll/geonusaf-segformer-b0-legacy-c6-block-fold1) · [TC-SegFormer](https://huggingface.co/sugam24/geonusaf-tcsegformer-legacy-c6-tc_full-legacy_kfold-fold1)
+
+**Ablations** — [Without detail](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_detail) · [Without boundary weighting](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_csa) · [Without clDice](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_cldice) · [Without sampler](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_sampler)
+
+**LoveDA** — [TC-SegFormer](https://huggingface.co/Pranilllllll/geonusaf-tcsegformer-loveda-both-v3-slide) · [SegFormer-B0](https://huggingface.co/Pranilllllll/geonusaf-segformer-b0-loveda-both-v3-slide)
+
+**Diffusion and generated data** — [Binary mask DDPM](https://huggingface.co/sugam24/geonusaf-stage1-maskddpm-block-fold1) · [One-hot mask DDPM](https://huggingface.co/sugam24/geonusaf-stage1-maskddpm-onehot-block-fold1) · [Mask-conditioned image generator](https://huggingface.co/Pranilllllll/geonusaf-stage2-mask2image-block-fold1-D) · [Generated pairs](https://huggingface.co/sugam24/geonusaf-stage3-fakepairs-block-fold1)
+
+| Downstream model | Training arms |
+|---|---|
+| U-Net | [Real only (R0)](https://huggingface.co/Pranilllllll/geonusaf-s4-unet-r18-R0-block-fold1) · [Real + synthetic (R1)](https://huggingface.co/Pranilllllll/geonusaf-s4-unet-r18-R1-block-fold1) |
+| UNetFormer | [Real only (R0)](https://huggingface.co/Pranilllllll/geonusaf-s4-unetformer-r18-R0-block-fold1) · [Real + synthetic (R1)](https://huggingface.co/Pranilllllll/geonusaf-s4-unetformer-r18-R1-block-fold1) |
+| SegFormer-B0 | [Real only (R0)](https://huggingface.co/Pranilllllll/geonusaf-s4-segformer-b0-R0-block-fold1) · [Real + synthetic (R1)](https://huggingface.co/Pranilllllll/geonusaf-s4-segformer-b0-R1-block-fold1) |
+| SegNeXt-T | [Real only (R0)](https://huggingface.co/sugam24/geonusaf-s4-segnext-t-R0-block-fold1) · [Real + synthetic (R1)](https://huggingface.co/sugam24/geonusaf-s4-segnext-t-R1-block-fold1) |
+| TC-SegFormer | [Real only (R0)](https://huggingface.co/sugam24/geonusaf-s4-tcsegformer-R0-block-fold1) · [Real + synthetic (R1)](https://huggingface.co/sugam24/geonusaf-s4-tcsegformer-R1-block-fold1) |
+
+## Repository file index
+
+
+### src/segmentation-models
+
+| File | Purpose |
+|---|---|
+| [1. unet-r18.ipynb](src/segmentation-models/1.%20unet-r18.ipynb) | Train and evaluate U-Net on grouped folds. |
+| [2. unetformer.ipynb](src/segmentation-models/2.%20unetformer.ipynb) | Train and evaluate UNetFormer on grouped folds. |
+| [3. segformer-b0.ipynb](src/segmentation-models/3.%20segformer-b0.ipynb) | Train and evaluate SegFormer-B0 on grouped folds. |
+| [4. segnext.ipynb](src/segmentation-models/4.%20segnext.ipynb) | Train and evaluate SegNeXt-T on grouped folds. |
+| [5. tc-segformer.ipynb](src/segmentation-models/5.%20tc-segformer.ipynb) | Train and evaluate TC-SegFormer on grouped folds. |
+| [6. ablation-tc-segformer.ipynb](src/segmentation-models/6.%20ablation-tc-segformer.ipynb) | Remove one proposed component per run. |
+| [7. segformer-b0-legacy.ipynb](src/segmentation-models/7.%20segformer-b0-legacy.ipynb) | Reproduce the legacy file-level split for SegFormer-B0. |
+| [8. tc-segformer-legacy.ipynb](src/segmentation-models/8.%20tc-segformer-legacy.ipynb) | Reproduce the legacy file-level split for TC-SegFormer. |
+| [test.txt](src/segmentation-models/test.txt) | Empty directory placeholder. |
+
+### src/generative-models
+
+| File | Purpose |
+|---|---|
+| [1. Stage1-maskddpm-binary.ipynb](src/generative-models/1.%20Stage1-maskddpm-binary.ipynb) | Evaluate binary-coded mask diffusion and its boundary artifacts. |
+| [2. Stage1-maskddpm-onehot.ipynb](src/generative-models/2.%20Stage1-maskddpm-onehot.ipynb) | Train the one-hot layout generator used for synthesis. |
+| [3. Stage2-mask2image.ipynb](src/generative-models/3.%20Stage2-mask2image.ipynb) | Train mask-conditioned RGB synthesis on real pairs. |
+| [4. Stage3-chained-sampling.ipynb](src/generative-models/4.%20Stage3-chained-sampling.ipynb) | Chain both generators and score paired outputs. |
+| [test.txt](src/generative-models/test.txt) | Empty directory placeholder. |
+
+### src/downstream-segmentation-models
+
+| File | Purpose |
+|---|---|
+| [1. Stage4-unet-r18-R0R1.ipynb](src/downstream-segmentation-models/1.%20Stage4-unet-r18-R0R1.ipynb) | Compare real-only and mixed training for U-Net at matched steps. |
+| [2. Stage4-unetformer-r18-R0R1.ipynb](src/downstream-segmentation-models/2.%20Stage4-unetformer-r18-R0R1.ipynb) | Compare real-only and mixed training for UNetFormer at matched steps. |
+| [3. Stage4-segformer-b0-R0R1.ipynb](src/downstream-segmentation-models/3.%20Stage4-segformer-b0-R0R1.ipynb) | Compare real-only and mixed training for SegFormer-B0 at matched steps. |
+| [4. Stage4-segnext-t-R0R1.ipynb](src/downstream-segmentation-models/4.%20Stage4-segnext-t-R0R1.ipynb) | Compare real-only and mixed training for SegNeXt-T at matched steps. |
+| [5. Stage4-tcsegformer-R0R1.ipynb](src/downstream-segmentation-models/5.%20Stage4-tcsegformer-R0R1.ipynb) | Compare real-only and mixed training for TC-SegFormer at matched steps. |
+| [test.txt](src/downstream-segmentation-models/test.txt) | Empty directory placeholder. |
+
+### src/helper-codes
+
+| File | Purpose |
+|---|---|
+| [1. zenodo-upload.ipynb](src/helper-codes/1.%20zenodo-upload.ipynb) | Prepare and upload dataset artifacts to Zenodo. |
+| [2. dataset-characterisation.ipynb](src/helper-codes/2.%20dataset-characterisation.ipynb) | Compute corpus composition and scene-level statistics. |
+| [3. gsd-calibration.ipynb](src/helper-codes/3.%20gsd-calibration.ipynb) | Recover ground sampling distance using known ground dimensions. |
+| [4. loveda_benchmark.ipynb](src/helper-codes/4.%20loveda_benchmark.ipynb) | Compare SegFormer-B0 and TC-SegFormer on LoveDA. |
+| [5. model-card-compendium.ipynb](src/helper-codes/5.%20model-card-compendium.ipynb) | Collect Hugging Face model cards into a document. |
+| [6. R0R1_metrices_card.ipynb](src/helper-codes/6.%20R0R1_metrices_card.ipynb) | Aggregate downstream metrics by training arm. |
+| [7. push-to-kaggle(synthetic_mask).ipynb](src/helper-codes/7.%20push-to-kaggle%28synthetic_mask%29.ipynb) | Package generated data for Kaggle. |
+| [8. colorize-stage1-masks.ipynb](src/helper-codes/8.%20colorize-stage1-masks.ipynb) | Render Stage 1 class-index masks in the annotation palette. |
+| [test.txt](src/helper-codes/test.txt) | Empty directory placeholder. |
+
+### src/figure-generation
+
+| File | Purpose |
+|---|---|
+| [1. figures_all_in_one.ipynb](src/figure-generation/1.%20figures_all_in_one.ipynb) | Build selected manuscript plots and diagrams via the notebook control panel. |
+| [2. 5columns_figures.ipynb](src/figure-generation/2.%205columns_figures.ipynb) | Build qualitative model comparisons and the split-leakage comparison. |
+| [3. fig11.ipynb](src/figure-generation/3.%20fig11.ipynb) | Render generated layouts, synthesized RGB, and frozen scorer predictions together. |
+| [4.diagrams.ipynb](src/figure-generation/4.diagrams.ipynb) | Build data-dependent illustrations including the study area and reliability weights. |
+| [5. kathmandu_shapefile.shp](src/figure-generation/5.%20kathmandu_shapefile.shp) | Polygon geometry for the Kathmandu study-area map. |
+| [test.txt](src/figure-generation/test.txt) | Empty directory placeholder. |
+
+### graphs
+
+| File | Purpose |
+|---|---|
+| [Ablation_TC_Segformer.pdf](graphs/Ablation_TC_Segformer.pdf) | Compare TC-SegFormer component-removal runs. |
+| [Generation_Stage_4_b0_unetformer_unet.pdf](graphs/Generation_Stage_4_b0_unetformer_unet.pdf) | Stage 4 downstream runs for SegFormer-B0, UNetFormer, and U-Net. |
+| [Image_Generation.pdf](graphs/Image_Generation.pdf) | Stage 2 mask-conditioned RGB generation training. |
+| [SegNexT.pdf](graphs/SegNexT.pdf) | SegNeXt-T segmentation benchmark runs. |
+| [Segformer_B0.pdf](graphs/Segformer_B0.pdf) | SegFormer-B0 segmentation benchmark runs. |
+| [Segformer_TC_Segformer_LoveDA.pdf](graphs/Segformer_TC_Segformer_LoveDA.pdf) | External LoveDA runs for the backbone and proposed model. |
+| [Stage4_Segformer_B0__Unet__UnetFormer_R1.pdf](graphs/Stage4_Segformer_B0__Unet__UnetFormer_R1.pdf) | R1 mixed-data runs for SegFormer-B0, U-Net, and UNetFormer. |
+| [Stage_1__Mask_Generation.pdf](graphs/Stage_1__Mask_Generation.pdf) | Stage 1 diffusion experiments for semantic layouts. |
+| [Stage_3__Mask___Image_Generation.pdf](graphs/Stage_3__Mask___Image_Generation.pdf) | Stage 3 diagnostics for chained layout and RGB sampling. |
+| [Stage_4_Segnext___TC_Segformer.pdf](graphs/Stage_4_Segnext___TC_Segformer.pdf) | Stage 4 downstream runs for SegNeXt-T and TC-SegFormer. |
+| [TC_Segformer_training_graphs.pdf](graphs/TC_Segformer_training_graphs.pdf) | TC-SegFormer segmentation benchmark runs. |
+| [UnetFormer1.pdf](graphs/UnetFormer1.pdf) | UNetFormer segmentation benchmark runs. |
+| [Unet_Training_Graphs.pdf](graphs/Unet_Training_Graphs.pdf) | U-Net segmentation benchmark runs. |
+| [test.txt](graphs/test.txt) | Empty directory placeholder. |
+
+### Root files and author references
+
+The manuscript and Word documents below are local author materials excluded by the repository’s ignore rules. Filenames identify them in a working copy that includes the research documents.
+
+- `1. Introduction_and_Related_Work_MASTER.docx` — Literature review and motivation.
+- `2. Study-Area-and-Dataset-Master-Reference.docx` — Study region, annotations, and scale references.
+- `3. Methodology_and_Experimental_Setup_MASTER.docx` — Architecture specifications and experiment protocols.
+- `4. Results_Discussion_Conclusion_MASTER(second version).docx` — Detailed results and interpretation.
+- `5. All_Model_Cards.docx` — Compiled model cards and run metadata.
+- `7. Models.docx` — Original checkpoint inventory and experiment dashboard links.
+- `Research_paper_TC_Segformer_-3-23.pdf` — authoritative manuscript, including methods, per-fold metrics, and uncertainty intervals.
+- `README.md` — research guide and artifact index.
+- `.gitignore` — local manuscript and supporting-document exclusions.
+- [LICENSE](LICENSE) — full MIT License for the research code.
+
+## Acknowledgements
+
+We thank the Department of Electronics and Computer Engineering, Institute of Engineering, Thapathali Campus, Tribhuvan University, for institutional support. We acknowledge Google as the source of the satellite imagery from which the Kathmandu Valley tiles were derived. We also thank the maintainers of QGIS, CVAT, PyTorch, and Hugging Face for the tools used in this research.
+
+This research received no specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+
+## License
+
+The research code is released under the [MIT License](LICENSE). Copies or substantial portions of the software must retain the copyright and permission notices.
+
+The source imagery is subject to the commercial basemap provider’s redistribution restrictions. Access to the annotations and associated metadata is described in the [dataset record](https://doi.org/10.5281/zenodo.22349064). For pretrained weights and other third-party materials, consult the licence accompanying the respective release.
